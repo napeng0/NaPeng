@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="GameCodeStd.h" />
+    <ClInclude Include="Utilities\String.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\templates.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\types.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic3D\geometry.h">
+      <Filter>Graphic3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Debugging\Logger.h">
+      <Filter>Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCode\interface.h">
+      <Filter>GameCode</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCode\BaseGameLogic.h">
+      <Filter>GameCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic3D\material.h">
+      <Filter>Graphic3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic3D\Scene.h">
+      <Filter>Graphic3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic3D\light.h">
+      <Filter>Graphic3D</Filter>
+    </ClInclude>
+    <ClInclude Include="MainLoop\Initialization.h">
+      <Filter>MainLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCode\GameCode.h">
+      <Filter>GameCode</Filter>
+    </ClInclude>
+    <ClInclude Include="MainLoop\ProcessManager.h">
+      <Filter>MainLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="MainLoop\Process.h">
+      <Filter>MainLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Math.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Debugging\MemoryWatcher.h">
+      <Filter>Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager\EventManager.h">
+      <Filter>EventManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiCore\CriticalSection.h">
+      <Filter>MultiCore</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors\Actor.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors\ActorComponent.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Pathing.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\MemoryPool.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\MemoryMacros.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager\Events.h">
+      <Filter>EventManager</Filter>
+    </ClInclude>
+    <ClInclude Include="LUA\ScriptEvent.h">
+      <Filter>LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="LUA\LuaStateManager.h">
+      <Filter>LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\PhysicsEventListener.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\Physics.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors\TransformComponent.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceCache\ZipFile.h">
+      <Filter>ResourceCache</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceCache\ResCache.h">
+      <Filter>ResourceCache</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\PhysicsDebugDrawer.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\HumanView.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UserInterface.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiCore\RealTimeProcess.h">
+      <Filter>MultiCore</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiCore\SafeStream.h">
+      <Filter>MultiCore</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWork\NetWork.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="LUA\ScriptResource.h">
+      <Filter>LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="LUA\ScriptProcess.h">
+      <Filter>LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="LUA\ScriptExport.h">
+      <Filter>LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors\BaseScriptComponent.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors\RenderComponent.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic3D\Renderer.h">
+      <Filter>Graphic3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic3D\Mesh.h">
+      <Filter>Graphic3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic3D\RayCast.h">
+      <Filter>Graphic3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic3D\Shaders.h">
+      <Filter>Graphic3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic3D\MovementController.h">
+      <Filter>Graphic3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic3D\Sky.h">
+      <Filter>Graphic3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors\PhysicsComponent.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\Audio.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\SoundResource.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\DirectSound.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\SoundProcess.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors\AudioComponent.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors\PickupInterface.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors\AmmoPickup.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors\HealthPickup.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\MessageBox.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors\ActorFactory.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceCache\XmlResource.h">
+      <Filter>ResourceCache</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Debugging">
+      <UniqueIdentifier>{35126f04-d9ee-4cc0-8ef8-3dd9dcf5035c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{f377e068-9fae-4663-a1a8-375612327ad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic3D">
+      <UniqueIdentifier>{ad60dd95-b69b-4568-8c5e-a6eba0bfcc64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MultiCore">
+      <UniqueIdentifier>{30c42db9-b19d-44ab-b7a8-68b507cafd4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCode">
+      <UniqueIdentifier>{c08d2616-9b30-46b9-99ee-dff586140ec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainLoop">
+      <UniqueIdentifier>{107d7b38-e689-4d70-874f-61c4a0a0f715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventManager">
+      <UniqueIdentifier>{fc59bb13-b57f-4d8a-941d-75888c79e963}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actors">
+      <UniqueIdentifier>{1d8cb492-7784-4f63-beaa-12c32aa3e5ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{b4226a9a-60d6-4dd3-a58b-b1e7cd504292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{ce2b5e04-3798-4a6a-b399-65c1eee6cc31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LUA">
+      <UniqueIdentifier>{66d6edd0-39c0-4dbe-8820-8eb0f838f42c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{c87da40c-c992-4952-80d4-924f82547a4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceCache">
+      <UniqueIdentifier>{6da95325-8b21-45b3-b34c-01ea92d1ee6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{ad8a6e54-5f01-48bd-9137-a419fcd45e9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetWork">
+      <UniqueIdentifier>{fbb7a252-2aca-4977-87c6-817d9de797e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{afa8c491-6400-41c7-8830-5cb4a70a2f7f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Utilities\String.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Debugging\Logger.cpp">
+      <Filter>Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic3D\geometry.cpp">
+      <Filter>Graphic3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MainLoop\Initialization.cpp">
+      <Filter>MainLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="MainLoop\Process.cpp">
+      <Filter>MainLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="MainLoop\ProcessManager.cpp">
+      <Filter>MainLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Math.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager\EventManager.cpp">
+      <Filter>EventManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Actors\Actor.cpp">
+      <Filter>Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\MemoryPool.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\Pathing.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="LUA\ScriptEvent.cpp">
+      <Filter>LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="LUA\LuaStateManager.cpp">
+      <Filter>LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager\Events.cpp">
+      <Filter>EventManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\Physics.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Actors\TransformComponent.cpp">
+      <Filter>Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceCache\ZipFile.cpp">
+      <Filter>ResourceCache</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceCache\ResCache.cpp">
+      <Filter>ResourceCache</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\PhysicsDebugDrawer.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCode\BaseGameLogic.cpp">
+      <Filter>GameCode</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCore\RealTimeProcess.cpp">
+      <Filter>MultiCore</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWork\NetWork.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="LUA\ScriptResource.cpp">
+      <Filter>LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="LUA\ScriptProcess.cpp">
+      <Filter>LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="LUA\ScriptExport.cpp">
+      <Filter>LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic3D\Material.cpp">
+      <Filter>Graphic3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic3D\Mesh.cpp">
+      <Filter>Graphic3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic3D\RayCast.cpp">
+      <Filter>Graphic3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic3D\light.cpp">
+      <Filter>Graphic3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic3D\Renderer.cpp">
+      <Filter>Graphic3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic3D\Scene.cpp">
+      <Filter>Graphic3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic3D\Shaders.cpp">
+      <Filter>Graphic3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic3D\MovementController.cpp">
+      <Filter>Graphic3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic3D\Sky.cpp">
+      <Filter>Graphic3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Actors\BaseScriptComponent.cpp">
+      <Filter>Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Actors\RenderComponent.cpp">
+      <Filter>Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic3D\SceneNode.cpp">
+      <Filter>Graphic3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Actors\PhysicsComponents.cpp">
+      <Filter>Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\Audio.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\SoundResource.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\DirectSound.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\SoundProcess.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Actors\AudioComponent.cpp">
+      <Filter>Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Actors\AmmoPickup.cpp">
+      <Filter>Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Actors\HealthPickup.cpp">
+      <Filter>Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\HumanView.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\MessageBox.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Actors\ActorFactory.cpp">
+      <Filter>Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceCache\XmlResource.cpp">
+      <Filter>ResourceCache</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCode\GameCode.cpp">
+      <Filter>GameCode</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

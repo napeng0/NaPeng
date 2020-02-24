@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Actors\Actor.h" />
+    <ClInclude Include="Actors\ActorComponent.h" />
+    <ClInclude Include="Actors\ActorFactory.h" />
+    <ClInclude Include="Actors\AmmoPickup.h" />
+    <ClInclude Include="Actors\AudioComponent.h" />
+    <ClInclude Include="Actors\BaseScriptComponent.h" />
+    <ClInclude Include="Actors\HealthPickup.h" />
+    <ClInclude Include="Actors\PhysicsComponent.h" />
+    <ClInclude Include="Actors\PickupInterface.h" />
+    <ClInclude Include="Actors\RenderComponent.h" />
+    <ClInclude Include="Actors\TransformComponent.h" />
+    <ClInclude Include="AI\Pathing.h" />
+    <ClInclude Include="Audio\Audio.h" />
+    <ClInclude Include="Audio\DirectSound.h" />
+    <ClInclude Include="Audio\SoundProcess.h" />
+    <ClInclude Include="Audio\SoundResource.h" />
+    <ClInclude Include="Debugging\MemoryWatcher.h" />
+    <ClInclude Include="EventManager\EventManager.h" />
+    <ClInclude Include="EventManager\Events.h" />
+    <ClInclude Include="GameCodeStd.h" />
+    <ClInclude Include="Debugging\Logger.h" />
+    <ClInclude Include="GameCode\BaseGameLogic.h" />
+    <ClInclude Include="GameCode\GameCode.h" />
+    <ClInclude Include="GameCode\interface.h" />
+    <ClInclude Include="Graphic3D\light.h" />
+    <ClInclude Include="Graphic3D\material.h" />
+    <ClInclude Include="Graphic3D\Mesh.h" />
+    <ClInclude Include="Graphic3D\MovementController.h" />
+    <ClInclude Include="Graphic3D\RayCast.h" />
+    <ClInclude Include="Graphic3D\Renderer.h" />
+    <ClInclude Include="Graphic3D\Scene.h" />
+    <ClInclude Include="Graphic3D\Shaders.h" />
+    <ClInclude Include="Graphic3D\Sky.h" />
+    <ClInclude Include="LUA\LuaStateManager.h" />
+    <ClInclude Include="LUA\ScriptEvent.h" />
+    <ClInclude Include="LUA\ScriptExport.h" />
+    <ClInclude Include="LUA\ScriptProcess.h" />
+    <ClInclude Include="LUA\ScriptResource.h" />
+    <ClInclude Include="MainLoop\Initialization.h" />
+    <ClInclude Include="MainLoop\Process.h" />
+    <ClInclude Include="MainLoop\ProcessManager.h" />
+    <ClInclude Include="Memory\MemoryMacros.h" />
+    <ClInclude Include="Memory\MemoryPool.h" />
+    <ClInclude Include="MultiCore\CriticalSection.h" />
+    <ClInclude Include="MultiCore\RealTimeProcess.h" />
+    <ClInclude Include="MultiCore\SafeStream.h" />
+    <ClInclude Include="NetWork\NetWork.h" />
+    <ClInclude Include="Physics\Physics.h" />
+    <ClInclude Include="Physics\PhysicsDebugDrawer.h" />
+    <ClInclude Include="Physics\PhysicsEventListener.h" />
+    <ClInclude Include="ResourceCache\ResCache.h" />
+    <ClInclude Include="ResourceCache\XmlResource.h" />
+    <ClInclude Include="ResourceCache\ZipFile.h" />
+    <ClInclude Include="UI\HumanView.h" />
+    <ClInclude Include="UI\MessageBox.h" />
+    <ClInclude Include="UI\UserInterface.h" />
+    <ClInclude Include="Utilities\Math.h" />
+    <ClInclude Include="Utilities\types.h" />
+    <ClInclude Include="Utilities\templates.h" />
+    <ClInclude Include="Graphic3D\geometry.h" />
+    <ClInclude Include="Utilities\String.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Actors\Actor.cpp" />
+    <ClCompile Include="Actors\ActorFactory.cpp" />
+    <ClCompile Include="Actors\AmmoPickup.cpp" />
+    <ClCompile Include="Actors\AudioComponent.cpp" />
+    <ClCompile Include="Actors\BaseScriptComponent.cpp" />
+    <ClCompile Include="Actors\HealthPickup.cpp" />
+    <ClCompile Include="Actors\PhysicsComponents.cpp" />
+    <ClCompile Include="Actors\RenderComponent.cpp" />
+    <ClCompile Include="Actors\TransformComponent.cpp" />
+    <ClCompile Include="AI\Pathing.cpp" />
+    <ClCompile Include="Audio\Audio.cpp" />
+    <ClCompile Include="Audio\DirectSound.cpp" />
+    <ClCompile Include="Audio\SoundProcess.cpp" />
+    <ClCompile Include="Audio\SoundResource.cpp" />
+    <ClCompile Include="Debugging\Logger.cpp" />
+    <ClCompile Include="EventManager\EventManager.cpp" />
+    <ClCompile Include="EventManager\Events.cpp" />
+    <ClCompile Include="GameCode\BaseGameLogic.cpp" />
+    <ClCompile Include="GameCode\GameCode.cpp" />
+    <ClCompile Include="Graphic3D\geometry.cpp" />
+    <ClCompile Include="Graphic3D\light.cpp" />
+    <ClCompile Include="Graphic3D\Material.cpp" />
+    <ClCompile Include="Graphic3D\Mesh.cpp" />
+    <ClCompile Include="Graphic3D\MovementController.cpp" />
+    <ClCompile Include="Graphic3D\RayCast.cpp" />
+    <ClCompile Include="Graphic3D\Renderer.cpp" />
+    <ClCompile Include="Graphic3D\Scene.cpp" />
+    <ClCompile Include="Graphic3D\SceneNode.cpp" />
+    <ClCompile Include="Graphic3D\Shaders.cpp" />
+    <ClCompile Include="Graphic3D\Sky.cpp" />
+    <ClCompile Include="LUA\LuaStateManager.cpp" />
+    <ClCompile Include="LUA\ScriptEvent.cpp" />
+    <ClCompile Include="LUA\ScriptExport.cpp" />
+    <ClCompile Include="LUA\ScriptProcess.cpp" />
+    <ClCompile Include="LUA\ScriptResource.cpp" />
+    <ClCompile Include="MainLoop\Initialization.cpp" />
+    <ClCompile Include="MainLoop\Process.cpp" />
+    <ClCompile Include="MainLoop\ProcessManager.cpp" />
+    <ClCompile Include="Memory\MemoryPool.cpp" />
+    <ClCompile Include="MultiCore\RealTimeProcess.cpp" />
+    <ClCompile Include="NetWork\NetWork.cpp" />
+    <ClCompile Include="Physics\Physics.cpp" />
+    <ClCompile Include="Physics\PhysicsDebugDrawer.cpp" />
+    <ClCompile Include="ResourceCache\ResCache.cpp" />
+    <ClCompile Include="ResourceCache\XmlResource.cpp" />
+    <ClCompile Include="ResourceCache\ZipFile.cpp" />
+    <ClCompile Include="UI\HumanView.cpp" />
+    <ClCompile Include="UI\MessageBox.cpp" />
+    <ClCompile Include="Utilities\Math.cpp" />
+    <ClCompile Include="Utilities\String.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{79D7042F-1CDB-4F09-A983-A2F7396FBC71}</ProjectGuid>
+    <RootNamespace>Platformwin</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>3D Engine(win)</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\DXUT11\Core;$(DXSDK_DIR)\Include;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\luaplus51-all\Src\LuaPlus;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\tinyxml_2_6_2;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\zlib-1.2.5;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\bullet-2.79\src;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\libvorbis-1.3.2\include;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\libogg-1.3.0\include;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\DXUT11\Effects11\Inc;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\DXUT11\Optional;$(ProjectDir);$(IncludePath)</IncludePath>
+    <TargetExt>.lib</TargetExt>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\DXUT11\Core;$(DXSDK_DIR)\Include;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\luaplus51-all\Src\LuaPlus;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\tinyxml_2_6_2;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\zlib-1.2.5;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\bullet-2.79\src;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\libvorbis-1.3.2\include;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\libogg-1.3.0\include;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\DXUT11\Effects11\Inc;$(ProjectDir)\3rdParty\Source\GCC4\3rdParty\DXUT11\Optional;$(ProjectDir);$(IncludePath)</IncludePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>GameCodeStd.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>E:\Program Files %28x86%29\Projects\WindowsProject\3rdParty\Source\Lib\Win32Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>GameCodeStd.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>E:\Program Files %28x86%29\Projects\WindowsProject\Platform%28win%29\3rdParty\Source\Lib\Win32Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
