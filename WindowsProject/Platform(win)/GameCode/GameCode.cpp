@@ -125,7 +125,7 @@ bool GameCodeApp::InitInstance(HINSTANCE hInstance, LPWSTR lpCmdLine, HWND hWnd,
 	RegisterEngineEvents();
 	VRegisterGameEvents();
 
-	IResourceFile *zipFile = (m_IsEditorRunning || m_Options.m_UseDevelopmentDirectories) ?
+	IResourceFile* zipFile = (m_IsEditorRunning || m_Options.m_UseDevelopmentDirectories) ?
 		New DevelopmentResourceZipFile(L"Assets.zip", DevelopmentResourceZipFile::Editor) :
 		New ResourceZipFile(L"Assets.zip");
 
@@ -1011,14 +1011,7 @@ void CALLBACK GameCodeApp::OnUpdateGame(double fTime, float fElapsedTime, void* 
 
 
 
-//--------------------------------------------------------------------------------------
-// This callback function will be called at the end of every frame to perform all the 
-// rendering calls for the scene, and it will also be called if the window needs to be 
-// repainted. After this function has returned, the sample framework will call 
-// IDirect3DDevice9::Present to display the contents of the next buffer in the swap chain
-//
-// See Game Coding Complete - 3rd Edition - Chapter 6 - page 154
-//--------------------------------------------------------------------------------------
+
 void CALLBACK GameCodeApp::OnD3D9FrameRender(IDirect3DDevice9* pd3dDevice, double fTime, float fElapsedTime, void* pUserContext)
 {
 	BaseGameLogic *pGame = g_pApp->m_pGame;
@@ -1033,10 +1026,7 @@ void CALLBACK GameCodeApp::OnD3D9FrameRender(IDirect3DDevice9* pd3dDevice, doubl
 }
 
 
-//--------------------------------------------------------------------------------------
-// Create any D3D9 resources that will live through a device reset (D3DPOOL_MANAGED)
-// and aren't tied to the back buffer size
-//--------------------------------------------------------------------------------------
+
 HRESULT CALLBACK GameCodeApp::OnD3D9CreateDevice(IDirect3DDevice9* pd3dDevice, const D3DSURFACE_DESC* pBackBufferSurfaceDesc,
 	void* pUserContext)
 {
@@ -1048,9 +1038,6 @@ HRESULT CALLBACK GameCodeApp::OnD3D9CreateDevice(IDirect3DDevice9* pd3dDevice, c
 }
 
 
-//--------------------------------------------------------------------------------------
-// Release D3D9 resources created in the OnD3D9CreateDevice callback 
-//--------------------------------------------------------------------------------------
 void CALLBACK GameCodeApp::OnD3D9DestroyDevice(void* pUserContext)
 {
 	g_pApp->m_Renderer->VShutDown();
@@ -1078,7 +1065,7 @@ void GameCodeApp::VCreateNetworkEventForwarder(void)
 {
 	if (m_pNetworkEventForwarder != NULL)
 	{
-		ERROR("Overwriting network event forwarder in TeapotWarsApp!");
+		ERROR("Overwriting network event forwarder£¡");
 		SAFE_DELETE(m_pNetworkEventForwarder);
 	}
 
@@ -1104,7 +1091,7 @@ void GameCodeApp::VDestroyNetworkEventForwarder(void)
 }
 
 
-INT WINAPI GameCode4(HINSTANCE hInstance,
+INT WINAPI GameCode(HINSTANCE hInstance,
 	HINSTANCE hPrevInstance,
 	LPWSTR    lpCmdLine,
 	int       nCmdShow)
